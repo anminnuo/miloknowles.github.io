@@ -27,9 +27,8 @@ class AboutMe extends Component {
                 When I'm not writing code, I'm probably out running or biking.
               </p>
               <p className="mt-2 FontReadable FontColorBlack AnimateOnScroll animate__animated animate__fadeIn animate__slow">
-                At the moment, I'm working on an early-stage ocean robotics startup called Blue Meadow.
-                Broadly, our goal is to help scale-up the regenerative ocean farming industry through automation and sensing.
-                Hopefully I'll have more details to share soon :)
+                At the moment, I'm working on an early-stage, ocean robotics startup called <a href="https://www.bluemeadow.ai" target="_blank">Blue Meadow</a>.
+                If the website looks familiar, it's because I made it! We're building a robotic sensor buoy for seaweed farms.
               </p>
               <Card className="SocialMediaCard AnimateOnScroll animate__animated animate__fadeIn animate__slow Transparent">
                 <Card.Body className="SocialMediaCardBody">
