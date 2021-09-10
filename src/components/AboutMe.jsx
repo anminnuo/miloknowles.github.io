@@ -17,7 +17,7 @@ class AboutMe extends Component {
             <Col xs={0} lg={1} className="my-auto"></Col>
             <Col xs={12} lg={4} className="my-auto">
               {/* Fluid image auto-resizes to fit inside of its container */}
-              <Image src="/images/me.jpeg" className="AnimateOnScroll animate__animated animate__fadeIn" rounded fluid></Image>
+              <Image src="/images/blueswell.png" className="AnimateOnScroll animate__animated animate__fadeIn" rounded fluid></Image>
             </Col>
             <Col xs={12} lg={6} className="my-auto">
               <p className="mt-2 pt-3 SectionHeadingText FontColorDarkBlue AnimateOnScroll animate__animated animate__fadeIn animate__slow">ABOUT ME</p>
