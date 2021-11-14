@@ -7,18 +7,13 @@ import Nav from 'react-bootstrap/Nav';
 class TopNavbar extends Component {
   render() {
     return (
-      <Navbar className="DarkBackground" variant="light" id="TopNavbar">
+      <Navbar variant="light" id="top-navbar">
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">TOP</Nav.Link>
-            <Nav.Link href="/#about" className="FontColorBlack">ABOUT</Nav.Link>
-            <Nav.Link href="/#projects" className="FontColorBlack">PROJECTS</Nav.Link>
-            {/* <Nav.Link href="/#contact" className="FontColorBlack">CONTACT</Nav.Link> */}
-          </Nav>
-          <Nav>
-            <Nav.Link href="/images/resume.pdf" target="_blank" >RESUME</Nav.Link>
-            {/* <Nav.Link href="https://github.com/miloknowles" target="_blank">GITHUB</Nav.Link> */}
+            <Nav.Link href="/home" className="mono-font">HOME</Nav.Link>
+            <Nav.Link href="/about" className="mono-font">ABOUT</Nav.Link>
+            <Nav.Link href="/projects" className="mono-font">PROJECTS</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

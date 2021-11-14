@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
 
 import './css/style.css';
 import './css/text.css';
 
 import TopNavbar from './components/TopNavbar';
-import ResponsiveHello from './components/ResponsiveHello';
-import AboutMe from './components/AboutMe';
-import ProjectList from './components/ProjectList';
-// import ContactCard from './components/ContactCard';
-import Footer from './components/Footer';
-import RRTAlgorithm from './components/RrtVisualizer';
+import { Outlet } from 'react-router';
 
 
 class App extends Component {
@@ -18,14 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <TopNavbar/>
-        <Container id="TreeVisualizationContainer" className="LightBackground" fluid>
-          <RRTAlgorithm/>
-        </Container>
-        <ResponsiveHello/>
-        <AboutMe/>
-        <ProjectList/>
-        {/* <ContactCard/> */}
-        <Footer/>
+        <Outlet/>
       </div>
     );
   }
@@ -36,6 +23,17 @@ class App extends Component {
    * animate__* is removed initially, and added upon scroll to trigger.
    */
   componentDidMount() {
+    setInterval(() => {
+      let char = document.title.codePointAt(0).toString(16);
+      if (char === "🌎".codePointAt(0).toString(16)) {
+        document.title = "🌍 Milo Knowles";
+      } else if (char === "🌍".codePointAt(0).toString(16)) {
+        document.title = "🌏 Milo Knowles";
+      } else {
+        document.title = "🌎 Milo Knowles";
+      }
+    }, 1000);
+
     // Get all elements with "AnimateOnScroll" in their classlist.
     const triggerElements = Array.from(document.getElementsByClassName("AnimateOnScroll"));
 

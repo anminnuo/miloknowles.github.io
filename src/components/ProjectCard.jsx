@@ -12,30 +12,27 @@ class ProjectCard extends Component {
   render() {
     return (
       <Accordion>
-        <Card className="mt-5" bg="light" border="secondary AnimateOnScroll animate__animated animate__fadeIn">
-          <Card.Img variant="top" src={this.props.image} bg="primary" fluid="true"/>
-          <Card.Header className="pt-2">
-            <Container>
-              <Row className="pt-2 pb-1">
-                <Col xs={12} lg={9} className="my-auto">
-                  <div className="ProjectTitleText">{this.props.title}</div>
+        <Card className="mt-5" bg="light" border="secondary">
+          <Card.Header>
+            <Container className="pl-2 pr-2">
+              <Row className="" style={{padding: 0}}>
+                <Col xs={12} lg={10} className="my-auto">
+                  <Accordion.Toggle as={Button} variant="link" className="read-more-button" eventKey="0">
+                    <div className="project-title-text font-blue text-left mono-font">(+) {this.props.title} </div>
+                  </Accordion.Toggle>
                 </Col>
-                <Col xs={6} lg={2} className="my-auto">
-                  <div className="text-muted text-small text-right">{this.props.date}</div>
-                </Col>
-                <Col xs={6} lg={1} className="my-auto pl-0 pr-0">
-                  <div className="ml-auto d-flex">
-                    <Accordion.Toggle as={Button} variant="link" className="read-more-button" eventKey="0">
-                      <div className="ProjectTitleText text-small">[READ MORE]</div>
-                    </Accordion.Toggle>
-                  </div>
+                {/* https://getbootstrap.com/docs/5.0/utilities/display/ */}
+                {/* Hide on lg and smaller */}
+                <Col xs={0} lg={2} className="my-auto text-right d-none d-lg-block">
+                  <div className="text-small font-blue">{this.props.date}</div>
                 </Col>
               </Row>
             </Container>
           </Card.Header>
+          <Card.Img variant="top" src={this.props.image} bg="primary" fluid="true"/>
           <Accordion.Collapse eventKey="0">
-            <Card.Body>
-              <Card.Text className="FontReadable">
+            <Card.Body className="outlined">
+              <Card.Text className="pt-3">
                 {this.props.description}
               </Card.Text>
               {this.props.links}

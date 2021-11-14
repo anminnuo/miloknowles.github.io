@@ -5,12 +5,16 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.7em;
 }
 
+a {
+  color: rgb(0, 50, 210);
+}
+
 body {
-  font-family: 'Roboto Mono', 'monospace';
+  font-family: 'Roboto', 'sans-serif';
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #000;
+  color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,47 +23,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.FontReadable {
-  font-family: 'Roboto', sans-serif;
-}
-
-.FontMonospace {
+.mono-font {
   font-family: 'Roboto Mono', 'monospace';
 }
 
-.FontColorBlack {
-  color: #000000
-}
-
-.FontColorWhite {
-  color: #FFFFFF
-}
-
-.FontColorDarkBlue {
+.font-blue {
   color: rgb(0, 50, 210);
 }
 
-.FontColorMediumGray {
-  color: #616161
-}
-
-.ProjectTitleText {
-  font-size: 14px;
+.project-title-text {
+  font-size: 12px;
   font-weight: bold;
   line-height: 150%;
   vertical-align: middle;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
 }
 
-.HelloText {
+.hello-text {
   font-size: 14px;
 }
 
-.SectionHeadingText {
+.section-heading-text {
   font-size: 14px;
   font-weight: 800;
 }
 
 .text-small {
   font-size: 10px;
+}
+
+.card-header {
+  background-color: white;
+}
+
+.card-body {
+  background-color: white;
+}
+
+.card-link {
+  font-size: 12px;
+  font-family: 'Roboto Mono', 'monospace';
 }

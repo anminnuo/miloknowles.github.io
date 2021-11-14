@@ -142,7 +142,7 @@ class RRTAlgorithm extends Component {
     this.updateWidthAndHeight();
 
     // Start RRT off in the middle of the page.
-    console.log(this.state.width, this.state.height);
+    console.debug(this.state.width, this.state.height);
     this.setState({
       nodes: [[0.5, 0.5]],
       parents: [0],
@@ -158,13 +158,15 @@ class RRTAlgorithm extends Component {
 
   updateWidthAndHeight() {
     // https://stackoverflow.com/questions/2474009/browser-size-width-and-height/2474211
-    console.log(mobileCheck() ? "[RRT] Detected mobile device" : "[RRT] Detected non-mobile device");
-    let container = document.getElementById("TreeVisualizationContainer");
+    console.debug(mobileCheck() ? "[RRT] Detected mobile device" : "[RRT] Detected non-mobile device");
+    let container = document.getElementById("tree-container");
 
     // On mobile, RRT takes up the entire initial viewport. On desktop, only use a section.
-    let maybeNavbarHeight = document.getElementById("TopNavbar").clientHeight || 0;
-    const pageHeight = window.innerHeight - maybeNavbarHeight;
-    const rrtBoxHeight = mobileCheck() ? pageHeight : 0.5 * pageHeight;
+    let maybeNavbarHeight = document.getElementById("top-navbar").clientHeight || 0;
+    let maybeHelloHeight = document.getElementById("hello-text").clientHeight || 0;
+    const pageHeight = window.innerHeight - maybeNavbarHeight - maybeHelloHeight;
+    // const rrtBoxHeight = mobileCheck() ? pageHeight : 0.5 * pageHeight;
+    const rrtBoxHeight = pageHeight;
 
     // Only update the height when the page loads (indicated by a zero initial value).
     // This avoids the RRT box jumping in side when you scroll down on mobile and the toolsbars
