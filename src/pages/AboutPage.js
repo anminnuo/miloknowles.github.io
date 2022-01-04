@@ -12,7 +12,6 @@ class AboutPage extends Component {
     return (
       <Container id="about-container-fluid" fluid>
         <Row className="mt-5">
-          <Col xs={0} md={1} xl={2} className="my-auto"></Col>
           <Col xs={12} md={4} xl={2} className="my-auto">
             <Image src="/images/blueswell.jpg" rounded fluid></Image>
           </Col>
@@ -24,7 +23,7 @@ class AboutPage extends Component {
               When I'm not writing code, I like to go running and biking.
             </p>
             <p className="mt-2">
-              At the moment, I'm working on an early-stage startup called <a href="https://www.bluemeadow.ai" target="_blank">Blue Meadow</a>.
+              At the moment, I'm looking for a jobs with an impact on climate and/or animal welfare.
             </p>
             <Card className="SocialMediaCard Transparent">
               <Card.Body className="SocialMediaCardBody">
@@ -33,11 +32,11 @@ class AboutPage extends Component {
                 <Card.Link href="https://twitter.com/milo_knowles" target="_blank"><span className="fa fa-twitter"></span></Card.Link>
                 <Card.Link href="https://github.com/miloknowles" target="_blank"><span className="fa fa-github"></span></Card.Link>
                 <Card.Link href="https://www.strava.com/athletes/6914634" target="_blank"><img src="/strava.svg" className="strava-icon text-small"/></Card.Link>
-                <Card.Link href="/images/resume.pdf" className="text-small" target="_blank">Resume</Card.Link>
+                <Card.Link href="/images/miloknowles_resume.pdf" className="text-small" target="_blank">Resume</Card.Link>
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={0} md={1} xl={4} className="my-auto"></Col>
+          <Col xs={0} md={2} xl={6} className="my-auto"></Col>
         </Row>
       </Container>
     );
