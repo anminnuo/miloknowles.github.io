@@ -14,6 +14,7 @@ class TopNavbar extends Component {
             <Nav.Link href="#/home" className="mono-font">HOME</Nav.Link>
             <Nav.Link href="#/about" className="mono-font">ABOUT</Nav.Link>
             <Nav.Link href="#/projects" className="mono-font">PROJECTS</Nav.Link>
+            <Nav.Link href="#/writing" className="mono-font">WRITING</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

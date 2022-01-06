@@ -24,7 +24,7 @@ class ProjectCard extends Component {
                 {/* https://getbootstrap.com/docs/5.0/utilities/display/ */}
                 {/* Hide on lg and smaller */}
                 <Col xs={0} lg={2} className="my-auto text-right d-none d-lg-block">
-                  <div className="text-small font-blue">{this.props.date}</div>
+                  <div className="text-small font-blue mono-font">{this.props.date}</div>
                 </Col>
               </Row>
             </Container>
