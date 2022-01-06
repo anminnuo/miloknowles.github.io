@@ -17,7 +17,7 @@ class WritingPage extends Component {
         <Row>
           <Col>
             <a href="#/writing/bluemeadow">
-              * What I learned from a (financially) unsuccessful year as a solo founder
+              * Blue Meadow: What I learned from a year as a solo founder
             </a>
           </Col>
         </Row>
