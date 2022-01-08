@@ -73,17 +73,6 @@ class RRTAlgorithm extends Component {
   // Returns true if an XY point 'x' is in collision. False means it's valid.
   checkCollision(x) {
     return false;
-
-    // var rect = this.rect;
-
-    // var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-    // var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    // console.log(scrollLeft, scrollTop);
-
-    // const inside_x = ((x[0] - scrollLeft) > rect.x) && ((x[0] - scrollLeft) < (rect.x + rect.width));
-    // const inside_y = ((x[1] - scrollTop) > rect.y) && ((x[1] - scrollTop) < (rect.y + rect.height));
-
-    // return (inside_x && inside_y);
   }
 
   sampleFreeSpace() {
@@ -99,9 +88,6 @@ class RRTAlgorithm extends Component {
     const kMaxNodes = 100;
     if (this.state.nodes.length > kMaxNodes) {
       clearInterval(this.interval);
-
-      // Trigger Delaunay triangulation.
-      // this.doTriangulation();
     }
 
     var sample_point = this.sampleFreeSpace();
@@ -127,12 +113,6 @@ class RRTAlgorithm extends Component {
       edges: this.state.edges
     });
   }
-
-  // doTriangulation() {
-  //   const delaunay = new Delaunator(this.state.nodes.flat());
-  //   console.log(delaunay.triangles);
-  //   this.setState({triangles: delaunay.triangles});
-  // }
 
   windowResizeCallback() {
     this.updateWidthAndHeight();
@@ -200,33 +180,14 @@ class RRTAlgorithm extends Component {
       key: "edge " + edge[0][0].toString() + " " + edge[0][1].toString() + " " + edge[1][0].toString() + " " + edge[1][1].toString()
     }));
 
-    // var rendered_tris = [];
-
-    // for (let i = 0; i < this.state.triangles.length; i += 3) {
-    //   const t0 = this.state.triangles[i];
-    //   const t1 = this.state.triangles[i+1];
-    //   const t2 = this.state.triangles[i+2];
-
-    //   let avgDist = this.state.distanceSoFar[t0] + this.state.distanceSoFar[t1] + this.state.distanceSoFar[t2];
-
-    //   rendered_tris.push(React.createElement("polygon", {
-    //     stroke: d3.interpolateTurbo(0.333 * 0.4 * avgDist / this.state.width),
-    //     points: [this.state.nodes[t0][0] * this.state.width, this.state.nodes[t0][1] * this.state.height,
-    //              this.state.nodes[t1][0] * this.state.width, this.state.nodes[t1][1] * this.state.height,
-    //              this.state.nodes[t2][0] * this.state.width, this.state.nodes[t2][1] * this.state.height],
-    //     fill: "none"
-    //   }));
-    // }
-
-    // if (rendered_tris.length > 0) {
-    //   return React.createElement("svg",
-    //     { className: "TreeVisualizationBox", width: this.state.width, height: this.state.height },
-    //     rendered_nodes, rendered_tris);
-    // } else {
     return React.createElement("svg",
-      { className: "TreeVisualizationBox", width: this.state.width, height: this.state.height },
-      rendered_nodes, rendered_edges);
-    // }
+      {
+        className: "TreeVisualizationBox",
+        width: this.state.width,
+        height: this.state.height
+      },
+      rendered_nodes,
+      rendered_edges);
   }
 };
 

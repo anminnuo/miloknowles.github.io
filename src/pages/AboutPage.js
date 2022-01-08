@@ -10,19 +10,21 @@ import Card from 'react-bootstrap/Card';
 class AboutPage extends Component {
   render() {
     return (
-      <Container id="about-container-fluid" fluid>
+      <Container id="about-container-fluid">
         <Row className="mt-5">
-          <Col xs={12} md={4} xl={2} className="my-auto">
+          <Col xs={12} md={8} lg={6} xl={5} className="my-auto">
             <Image src="/images/blueswell.jpg" rounded fluid></Image>
           </Col>
-          <Col xs={12} md={6} xl={4} className="my-auto">
+        </Row>
+        <Row className="">
+          <Col xs={12} md={8} lg={6} xl={5} className="my-auto">
             <p className="mt-2 pt-3 section-heading-text font-blue">ABOUT ME</p>
             <p className="mt-2">
               I'm a software engineer living in Cambridge, MA. During my time at MIT,
               my research focused on camera-based perception for autonomous robots.
               When I'm not writing code, I like to go running and biking.
             </p>
-            <p className="mt-2">
+            <p className="mt-2 font-blue">
               At the moment, I'm looking for a jobs with an impact on climate and/or animal welfare.
             </p>
             <Card className="SocialMediaCard Transparent">

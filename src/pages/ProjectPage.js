@@ -22,7 +22,7 @@ class ProjectPage extends Component {
     return (
       <Container className="pb-5">
         <Row>
-          <Col xs={12} className="my-auto">
+          <Col xs={12} lg={10} className="my-auto">
             <ProjectCard
               image={'/images/icra2021.png'}
               title={"ICRA 2021 PAPER"}
