@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
 
 h1, h2, h3, h4, h5, h6, p, li {
   line-height: 1.7em;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Reserved for putting dates at the top of essays. */
+h4 {
+  font-size: 12px;
+  font-family: 'Roboto Mono', 'Roboto', 'sans-serif';
+  color: gray;
 }
 
 a {
@@ -23,9 +33,9 @@ a {
 }
 
 body {
-  font-family: 'Helvetica', 'Roboto', 'sans-serif';
+  font-family: 'Crimson Pro', 'Roboto', 'serif';
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,6 +47,12 @@ code {
 
 .mono-font {
   font-family: 'Roboto Mono', 'monospace', 'sans-serif';
+}
+
+.navbar-font {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .font-blue {
@@ -56,9 +72,9 @@ code {
 }
 
 .section-heading-text {
-  font-family: 'Roboto Mono', 'Roboto', 'Helvetica', 'sans-serif';
-  font-size: 14px;
-  font-weight: 800;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .text-small {

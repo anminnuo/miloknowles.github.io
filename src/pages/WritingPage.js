@@ -11,10 +11,10 @@ class WritingPage extends Component {
       <Container>
         <Row className="mt-5">
           <Col>
-            <p className="mt-2 pt-3 section-heading-text font-blue">WRITING</p>
+            <p className="mt-2 pt-3 section-heading-text font-blue">Writing</p>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-5">
           <Col>
             <a href="#/writing/bluemeadow">
               * Blue Meadow: What I learned from a year as a solo founder

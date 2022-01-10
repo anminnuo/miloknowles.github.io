@@ -1,6 +1,6 @@
 # Blue Meadow: What I learned from a year as a solo founder
 
-*January, 2022*
+#### January, 2022
 ***
 
 Over the past 15 months, I took an unexpected detour in my life to work on a startup.

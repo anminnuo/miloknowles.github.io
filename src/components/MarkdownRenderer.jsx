@@ -6,14 +6,15 @@ import Col from 'react-bootstrap/Col';
 
 import { HashLink as Link } from 'react-router-hash-link';
 
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+// import rehypeRaw from 'rehype-raw';
 
 
 class MarkdownRenderer extends Component {
   constructor(props) {
     super(props)
-    this.state = { body: 'Fetching markdown...' }
+    this.state = { body: 'Loading...' }
   }
 
   componentWillMount() {
@@ -28,7 +29,7 @@ class MarkdownRenderer extends Component {
     return (
       <Container className="mt-5 mb-5">
         <Row>
-          <Col xs={12} md={9} lg={6} xl={5}>
+          <Col xs={12} md={10} lg={7} xl={6}>
             <ReactMarkdown children={this.state.body} remarkPlugins={[remarkGfm]}
                 components={{
                   a({node, inline, className, children, ...props}) {

@@ -16,9 +16,9 @@ class AboutPage extends Component {
             <Image src="/images/blueswell.jpg" rounded fluid></Image>
           </Col>
         </Row>
-        <Row className="">
+        <Row className="mb-5">
           <Col xs={12} md={8} lg={6} xl={5} className="my-auto">
-            <p className="mt-2 pt-3 section-heading-text font-blue">ABOUT ME</p>
+            <p className="mt-2 pt-3 section-heading-text font-blue">About</p>
             <p className="mt-2">
               I'm a software engineer living in Cambridge, MA. During my time at MIT,
               my research focused on camera-based perception for autonomous robots.
