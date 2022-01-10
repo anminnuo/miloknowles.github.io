@@ -54,7 +54,8 @@ class MarkdownRenderer extends Component {
                       )
                     }
                   }
-                }}
+                }
+              }
             />
           </Col>
         </Row>
