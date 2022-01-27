@@ -11,7 +11,7 @@ class NotFound extends Component {
         <Row className="align-items-center MaxHeightMinusNavbar">
           <Col>
             <div>
-              <p className="text-center mono-font font-blue">(THIS PAGE DOES NOT EXIST)</p>
+              <p className="text-center mono-font blue-font">(THIS PAGE DOES NOT EXIST)</p>
             </div>
           </Col>
         </Row>

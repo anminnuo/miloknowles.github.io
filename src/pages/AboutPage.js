@@ -18,23 +18,24 @@ class AboutPage extends Component {
         </Row>
         <Row className="mb-5">
           <Col xs={12} md={8} lg={6} xl={5} className="my-auto">
-            <p className="mt-2 pt-3 section-heading-text font-blue">About</p>
+            <p className="mt-2 pt-3 section-heading-text blue-font">About</p>
             <p className="mt-2">
               I'm a software engineer living in Cambridge, MA. During my time at MIT,
-              my research focused on camera-based perception for autonomous robots.
-              When I'm not writing code, I like to go running and biking.
+              my research focused on camera-based perception for autonomous robots, but I'm
+              interested in software projects of all kinds. When I'm not writing code,
+              I like to go running and biking.
             </p>
-            <p className="mt-2 font-blue">
-              At the moment, I'm looking for a jobs with an impact on climate and/or animal welfare.
+            <p className="mt-2 blue-font">
+              At the moment, I'm looking for a jobs with an impact on climate, sustainability, and/or animal welfare.
             </p>
             <Card className="SocialMediaCard Transparent">
               <Card.Body className="SocialMediaCardBody">
-                {/* <Card.Link href="milo@bluemeadow.ai" className="text-small">milo(at)bluemeadow.ai</Card.Link> */}
+                <Card.Link href="mailto:miloknowles97@gmail.com" className="text-small"><span className="fa fa-envelope"></span></Card.Link>
                 <Card.Link href="https://www.linkedin.com/in/milo-knowles/" target="_blank"><span className="fa fa-linkedin"></span></Card.Link>
                 <Card.Link href="https://twitter.com/milo_knowles" target="_blank"><span className="fa fa-twitter"></span></Card.Link>
                 <Card.Link href="https://github.com/miloknowles" target="_blank"><span className="fa fa-github"></span></Card.Link>
                 <Card.Link href="https://www.strava.com/athletes/6914634" target="_blank"><img src="/strava.svg" className="strava-icon text-small"/></Card.Link>
-                <Card.Link href="/images/miloknowles_resume.pdf" className="text-small" target="_blank">Resume</Card.Link>
+                <Card.Link href="/images/miloknowles_cv.pdf" className="text-small" target="_blank">CV</Card.Link>
               </Card.Body>
             </Card>
           </Col>

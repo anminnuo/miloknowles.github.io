@@ -11,7 +11,7 @@ class WritingPage extends Component {
       <Container>
         <Row className="mt-5">
           <Col>
-            <p className="mt-2 pt-3 section-heading-text font-blue">Writing</p>
+            <p className="mt-2 pt-3 section-heading-text blue-font">Writing</p>
           </Col>
         </Row>
         <Row className="mt-5">

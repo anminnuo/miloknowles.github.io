@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=IBM+Plex+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans', 'Roboto', 'serif';
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 h1, h2, h3, h4, h5, h6, p, li {
   line-height: 1.7em;
@@ -10,54 +22,50 @@ h1, h2, h3, h4, h5, h6, p, li {
 h1 {
   font-size: 32px;
   font-weight: bold;
+  font-family: 'IBM Plex Sans Condensed', 'Roboto', 'sans-serif';
 }
 
 h2 {
   font-size: 28px;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans Condensed', 'Roboto', 'sans-serif';
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+  font-family: 'IBM Plex Sans Condensed', 'Roboto', 'sans-serif';
 }
 
-/* Reserved for putting dates at the top of essays. */
+/* NOTE: Reserved for putting dates at the top of essays. */
 h4 {
   font-size: 12px;
-  font-family: 'Roboto Mono', 'Roboto', 'sans-serif';
+  font-family: 'IBM Plex Mono', 'Roboto Mono', monospace, 'sans-serif';
   color: gray;
-}
-
-a {
-  color: rgb(0, 50, 210);
-}
-
-body {
-  font-family: 'Crimson Pro', 'Roboto', 'serif';
-  font-weight: 400;
-  font-size: 20px;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Preformatted code blocks in blog posts. */
 pre code {
-  font-family: 'Roboto Mono', monospace, 'sans-serif';
+  font-family: 'IBM Plex Mono', 'Roboto Mono', monospace, 'sans-serif';
   font-size: 12px;
 }
 
 .mono-font {
-  font-family: 'Roboto Mono', 'monospace', 'sans-serif';
+  font-family: 'IBM Plex Mono', 'Roboto Mono', 'monospace', 'sans-serif';
 }
 
 .navbar-font {
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'IBM Plex Sans Condensed', 'Roboto', 'sans-serif';
   font-weight: bold;
   font-size: 14px;
 }
 
-.font-blue {
+.blue-font {
+  color: rgb(0, 50, 210);
+}
+
+/* Make links this color of blue. */
+a {
   color: rgb(0, 50, 210);
 }
 
@@ -66,7 +74,6 @@ pre code {
   font-weight: bold;
   line-height: 150%;
   vertical-align: middle;
-  /* font-family: "Roboto"; */
 }
 
 .hello-text {
@@ -74,7 +81,7 @@ pre code {
 }
 
 .section-heading-text {
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'IBM Plex Sans Condensed', 'Roboto', 'sans-serif';
   font-size: 20px;
   font-weight: bold;
 }
@@ -93,5 +100,5 @@ pre code {
 
 .card-link {
   font-size: 12px;
-  font-family: 'Roboto Mono', 'monospace';
+  font-family: 'IBM Plex Mono', 'Roboto Mono', 'monospace';
 }
