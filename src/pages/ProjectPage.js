@@ -24,6 +24,18 @@ class ProjectPage extends Component {
         <Row>
           <Col xs={12} lg={10} className="my-auto">
             <ProjectCard
+              image={'/images/everystreet.png'}
+              title={"Running every street in Cambridge, MA"}
+              description={<>Right now, my roommates and are trying to run every street in Cambridge.
+                             I built a web app to help us visualize and track progress. It pulls activities from
+                             the Strava API, compares the GPS routes to an OpenStreetMap road network, and tracks
+                             which edges of the network we've completed.
+                             The app is written in Flask, uses Google Firebase as a backend, and does visualization with Mapbox.
+                             If you're curious, there are about <code>150</code> miles of total roads in Cambridge, MA.</>}
+              date={'Ongoing'}
+              links={[<CardLink href="https://everystreet.herokuapp.com/map" text="Progress Tracker" target="_blank"></CardLink>]}>
+            </ProjectCard>
+            <ProjectCard
               image={'/images/icra2021.png'}
               title={"ICRA 2021 PAPER"}
               description={<>I had the opportunity to present my first paper at ICRA 2021! It asks and attempts to answer
