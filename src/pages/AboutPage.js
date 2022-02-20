@@ -21,12 +21,11 @@ class AboutPage extends Component {
             <p className="mt-2 pt-3 section-heading-text blue-font">About</p>
             <p className="mt-2">
               I'm a software engineer living in Cambridge, MA. During my time at MIT,
-              my research focused on camera-based perception for autonomous robots, but I'm
-              interested in software projects of all kinds. When I'm not writing code,
-              I like to go running and biking.
+              my research focused on camera-based perception for autonomous robots.
+              I'm broadly interested in working on problems in climate, sustainability, and animal welfare.
             </p>
             <p className="mt-2 blue-font">
-              At the moment, I'm looking for a jobs with an impact on climate, sustainability, and/or animal welfare.
+              At the moment, I'm working on grid decarbonization at <a href="https://carbonara.energy/">Singularity Energy</a>
             </p>
             <Card className="SocialMediaCard Transparent">
               <Card.Body className="SocialMediaCardBody">
