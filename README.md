@@ -1,23 +1,25 @@
 # Portfolio
 
-New and improved personal website
+New and improved personal website, written in React.
 
-# Setup
+## Setup
+
+First, install `nvm` to manage node versions: https://github.com/nvm-sh/nvm.
+
 ```bash
-# Install nodejs (also installs npm)
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
-# Project dependencies
-npm install gh-pages --save-dev
+nvm install 16
+nvm use 16
+npm install
 ```
 
-# Deploying
+## Running
 ```bash
+nvm use 16 # Doesn't work with node > 16.
+npm start
+```
+
+## Deploying
+```bash
+nvm use 16 # Doesn't work with node > 16.
 npm run deploy
 ```
-
-# Useful Links
-- [Portfolio examples](https://medium.com/@bestfolios/10-colorful-portfolios-from-top-designers-677e8861ae4)
-- [Online icon tool](https://icoconvert.com/)
-
