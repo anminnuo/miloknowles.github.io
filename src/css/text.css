@@ -6,13 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
+
 body {
   font-family: 'IBM Plex Sans', 'Roboto', 'serif';
-  font-weight: 400;
+  font-weight: thin;
   font-size: 16px;
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* DEFINE VARIABLES HERE */
+  --mk--green: #00A693;
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
@@ -39,7 +42,7 @@ h3 {
 
 /* NOTE: Reserved for putting dates at the top of essays. */
 h4 {
-  font-size: 12px;
+  font-size: 16px;
   font-family: 'IBM Plex Mono', 'Roboto Mono', monospace, 'sans-serif';
   color: gray;
 }
@@ -56,17 +59,21 @@ pre code {
 
 .navbar-font {
   font-family: 'IBM Plex Sans Condensed', 'Roboto', 'sans-serif';
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: thin;
+  font-size: 16px;
 }
 
-.blue-font {
-  color: rgb(0, 50, 210);
+.mk--green {
+  color: var(--mk--green);
 }
 
 /* Make links this color of blue. */
 a {
-  color: rgb(0, 50, 210);
+  color: var(--mk--green);
+}
+
+a:hover {
+  color: black;
 }
 
 .project-title-text {

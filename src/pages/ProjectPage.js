@@ -25,7 +25,7 @@ class ProjectPage extends Component {
           <Col xs={12} lg={10} className="my-auto">
             <ProjectCard
               image={'/images/everystreet.png'}
-              title={"Running every street in Cambridge, MA"}
+              title={"RUNNING EVERY STREET IN CAMBRIDGE, MA"}
               description={<>Right now, my roommates and I are trying to run every street in Cambridge.
                              I built a web app to help us visualize and track progress. It pulls activities from
                              the Strava API, matches the data to an OpenStreetMap road network, and tracks
@@ -33,8 +33,8 @@ class ProjectPage extends Component {
                              It's written in Flask, uses Google Firebase as a backend, and does visualization with Mapbox.
                              In case you're wondering, there are about <code>150</code> miles of total roads in Cambridge, MA!</>}
               date={'Ongoing'}
-              links={[<CardLink href="https://everystreet.herokuapp.com/map" text="Progress Tracker" target="_blank"></CardLink>]}>
-            </ProjectCard>
+              // links={[<CardLink href="https://everystreet.herokuapp.com/map" text="Progress Tracker" target="_blank"></CardLink>]}>
+            />
             <ProjectCard
               image={'/images/icra2021.png'}
               title={"ICRA 2021 PAPER"}

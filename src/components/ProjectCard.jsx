@@ -18,13 +18,13 @@ class ProjectCard extends Component {
               <Row className="" style={{padding: 0}}>
                 <Col xs={12} lg={10} className="my-auto">
                   <Accordion.Toggle as={Button} variant="link" className="read-more-button" eventKey="0">
-                    <div className="project-title-text blue-font text-left mono-font">(+) {this.props.title} </div>
+                    <div className="project-title-text mk--green text-left mono-font">(+) {this.props.title} </div>
                   </Accordion.Toggle>
                 </Col>
                 {/* https://getbootstrap.com/docs/5.0/utilities/display/ */}
                 {/* Hide on lg and smaller */}
                 <Col xs={0} lg={2} className="my-auto text-right d-none d-lg-block">
-                  <div className="text-small blue-font mono-font">{this.props.date}</div>
+                  <div className="text-small mk--green mono-font">{this.props.date}</div>
                 </Col>
               </Row>
             </Container>
